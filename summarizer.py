@@ -1,9 +1,11 @@
+import os
 import re
 import nltk
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from collections import Counter
 import string
+
 
 nltk.download('punkt')
 nltk.download('stopwords')
@@ -83,22 +85,41 @@ def generate_summary(user_msgs, ai_msgs, top_keywords):
     print(f"- Most common keywords: {', '.join(keywords_only)}")
     print("==========================================")
         
+def process_chat_folder(folder_path):
+    # Get all .txt files from the folder
+    chat_files = [f for f in os.listdir(folder_path) if f.endswith('.txt')]
+    
+    # Process each chat file
+    for chat_file in chat_files:
+        print(f"\nProcessing {chat_file}...")
+        chat_path = os.path.join(folder_path, chat_file)
+        
+        # Use your existing functions to process the file
+        chat_lines = read_chat_file(chat_path)
+        user_messages, ai_messages = split_messages(chat_lines)
+        
+        # Print results for this file
+        print(f"\n=== Summary for {chat_file} ===")
+        print(f"Total messages: {len(user_messages) + len(ai_messages)}")
+        print(f"User messages: {len(user_messages)}")
+        print(f"AI messages: {len(ai_messages)}")
 
-if __name__ == "__main__":
-    chat_file_path = "sample_chat.txt"
-    chat_lines = read_chat_file(chat_file_path)
+        print("Messages from User:")
+        for text in user_messages:
+            print("-", text)
 
-    user_messages, ai_messages = split_messages(chat_lines)
+        print("\nMessages from AI:")
+        for text in ai_messages:
+            print("-", text)
 
-    print("Messages from User:")
-    for text in user_messages:
-        print("-", text)
+        print_message_stats(user_messages, ai_messages)
+        top_keywords = extract_keywords(user_messages, ai_messages)
+        generate_summary(user_messages, ai_messages, top_keywords)
 
-    print("\nMessages from AI:")
-    for text in ai_messages:
-        print("-", text)
+#if __name__ == "__main__":
+#    chat_file_path = "sample_chat.txt"
+#    chat_lines = read_chat_file(chat_file_path)
 
-  
-    print_message_stats(user_messages, ai_messages)
-    top_keywords =extract_keywords(user_messages, ai_messages)
-    generate_summary(user_messages, ai_messages, top_keywords)
+if __name__ == "__main__":  
+    chat_folder = "chat_logs"  # folder containing your chat logs
+    process_chat_folder(chat_folder)
