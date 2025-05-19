@@ -17,8 +17,11 @@ A Python tool that processes and summarizes chat logs between users and AI assis
 
 ![Output 1](images/output1.png)
 ![Output 2](images/output2.png)
-![Output 3](images/output3.png)
-![Output 4](images/output4.png)
+.
+.
+.
+.
+.
 ![Output 5](images/output5.png)
 
 ### Project Structure
@@ -137,5 +140,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Python community for various tools and libraries
 
 ## Devolop by
-MD. Mohebullah
-mohebullah.cse@gmail.com
+-MD. Mohebullah
+-mohebullah.cse@gmail.com
