@@ -24,6 +24,15 @@ def split_messages(chat_lines):
     return user_lines, ai_lines
 
 
+#  Count and show message statistics
+def print_message_stats(user_msgs, ai_msgs):
+    total = len(user_msgs) + len(ai_msgs)
+    print("\n--- Message Statistics ---")
+    print(f"Total messages: {total}")
+    print(f"User messages: {len(user_msgs)}")
+    print(f"AI messages: {len(ai_msgs)}")
+
+
 if __name__ == "__main__":
     chat_file_path = "sample_chat.txt"
     chat_lines = read_chat_file(chat_file_path)
@@ -37,3 +46,5 @@ if __name__ == "__main__":
     print("\nMessages from AI:")
     for text in ai_messages:
         print("-", text)
+
+    print_message_stats(user_messages, ai_messages)
