@@ -100,9 +100,7 @@ def process_chat_folder(folder_path):
         
         # Print results for this file
         print(f"\n=== Summary for {chat_file} ===")
-        print(f"Total messages: {len(user_messages) + len(ai_messages)}")
-        print(f"User messages: {len(user_messages)}")
-        print(f"AI messages: {len(ai_messages)}")
+       
 
         print("Messages from User:")
         for text in user_messages:
