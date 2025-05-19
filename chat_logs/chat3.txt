@@ -1,0 +1,6 @@
+user: What is HTML?
+ai: HTML is the standard markup language for creating web pages.
+user: What is CSS?
+ai: CSS is a style sheet language used for describing the presentation of a document.
+user: What is JavaScript?
+ai: JavaScript is a programming language that enables interactive web pages. 

@@ -1,0 +1,6 @@
+user: What is artificial intelligence?
+ai: AI is the simulation of human intelligence by machines.
+user: What is deep learning?
+ai: Deep learning is a subset of machine learning using neural networks with many layers.
+user: What are AI applications?
+ai: AI is used in healthcare, finance, transportation, and many other fields. 

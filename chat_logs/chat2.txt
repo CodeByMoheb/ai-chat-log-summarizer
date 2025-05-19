@@ -1,0 +1,6 @@
+user: What is machine learning?
+ai: Machine learning is a subset of AI that enables systems to learn from data.
+user: What are common ML algorithms?
+ai: Common algorithms include decision trees, neural networks, and support vector machines.
+user: How do I start learning ML?
+ai: Start with Python, learn statistics, and practice with scikit-learn library. 

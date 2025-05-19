@@ -1,0 +1,6 @@
+user: What is cybersecurity?
+ai: Cybersecurity is the practice of protecting systems from digital attacks.
+user: What are common threats?
+ai: Common threats include malware, phishing, and ransomware.
+user: How to stay safe online?
+ai: Use strong passwords, keep software updated, and be cautious with emails. 

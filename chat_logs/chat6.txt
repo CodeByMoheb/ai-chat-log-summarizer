@@ -1,0 +1,6 @@
+user: What is cloud computing?
+ai: Cloud computing is the delivery of computing services over the internet.
+user: What are cloud services?
+ai: Common services include storage, databases, and virtual machines.
+user: What is AWS?
+ai: AWS is Amazon's cloud computing platform offering various services. 

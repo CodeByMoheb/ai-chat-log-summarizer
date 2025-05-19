@@ -1,0 +1,6 @@
+user: What is software testing?
+ai: Software testing is the process of evaluating software to ensure quality.
+user: What are testing types?
+ai: Types include unit testing, integration testing, and system testing.
+user: What is automated testing?
+ai: Automated testing uses tools to execute tests without manual intervention. 

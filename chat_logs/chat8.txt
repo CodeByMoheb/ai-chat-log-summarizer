@@ -1,0 +1,6 @@
+user: What is mobile app development?
+ai: Mobile app development is creating applications for mobile devices.
+user: What platforms are there?
+ai: Main platforms are iOS and Android.
+user: What languages are used?
+ai: Swift for iOS, Kotlin/Java for Android, and React Native for cross-platform. 

@@ -1,0 +1,6 @@
+user: What is Python?
+ai: Python is a high-level programming language known for its simplicity and readability.
+user: How do I install Python?
+ai: You can download Python from python.org and follow the installation instructions for your operating system.
+user: What are Python's main features?
+ai: Python features include dynamic typing, automatic memory management, and extensive standard library. 

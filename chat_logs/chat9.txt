@@ -1,0 +1,6 @@
+user: What is a database?
+ai: A database is an organized collection of structured data.
+user: What are SQL databases?
+ai: SQL databases use structured query language for managing relational data.
+user: What is NoSQL?
+ai: NoSQL databases store data in non-tabular form, like documents or graphs. 

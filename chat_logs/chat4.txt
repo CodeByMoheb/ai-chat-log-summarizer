@@ -1,0 +1,6 @@
+user: What is data science?
+ai: Data science combines statistics, programming, and domain knowledge to extract insights from data.
+user: What tools do data scientists use?
+ai: Common tools include Python, R, SQL, and various data visualization libraries.
+user: What is pandas?
+ai: Pandas is a Python library for data manipulation and analysis. 
