@@ -62,6 +62,27 @@ def extract_keywords(user_msgs, ai_msgs, top_n=5):
     print("\n--- Top Keywords ---")
     for word, freq in top_keywords:
         print(f"{word}: {freq}")
+        
+    return top_keywords
+
+
+# summary generation
+def generate_summary(user_msgs, ai_msgs, top_keywords):
+    total_exchanges = len(user_msgs) + len(ai_msgs)
+    keywords_only = [word for word, _ in top_keywords]
+
+    print("\n================= Summary =================")
+    print(f"- The conversation had {total_exchanges} exchanges.")
+
+    if keywords_only:
+        topic_guess = " and ".join(keywords_only[:2])
+        print(f"- The user asked mainly about {topic_guess}.")
+    else:
+        print("- Could not determine the conversation topic.")
+
+    print(f"- Most common keywords: {', '.join(keywords_only)}")
+    print("==========================================")
+        
 
 if __name__ == "__main__":
     chat_file_path = "sample_chat.txt"
@@ -77,5 +98,7 @@ if __name__ == "__main__":
     for text in ai_messages:
         print("-", text)
 
+  
     print_message_stats(user_messages, ai_messages)
-    extract_keywords(user_messages, ai_messages)
+    top_keywords =extract_keywords(user_messages, ai_messages)
+    generate_summary(user_messages, ai_messages, top_keywords)
