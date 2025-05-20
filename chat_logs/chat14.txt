@@ -1,0 +1,29 @@
+user: What are the key principles of software architecture?
+ai: Key principles include: 1) Separation of concerns, 2) Single responsibility principle, 3) DRY (Don't Repeat Yourself), 4) KISS (Keep It Simple, Stupid), 5) SOLID principles, 6) Scalability, 7) Maintainability, and 8) Security by design. These principles guide the creation of robust and maintainable systems.
+
+user: What's the difference between monolithic and microservices architecture?
+ai: Monolithic architecture is a single, unified application where all components are tightly coupled. Microservices architecture breaks down the application into small, independent services that communicate via APIs. Microservices offer better scalability and maintainability but add complexity in service coordination and deployment.
+
+user: How do you handle data consistency in distributed systems?
+ai: Approaches include: 1) ACID transactions where possible, 2) Eventual consistency patterns, 3) Saga pattern for distributed transactions, 4) Two-phase commit protocol, 5) CQRS (Command Query Responsibility Segregation), 6) Event sourcing, and 7) Conflict resolution strategies.
+
+user: What are the common design patterns in software architecture?
+ai: Common patterns include: 1) Creational patterns (Factory, Singleton), 2) Structural patterns (Adapter, Bridge), 3) Behavioral patterns (Observer, Strategy), 4) Architectural patterns (MVC, MVVM), 5) Integration patterns, 6) Cloud patterns, and 7) Microservices patterns.
+
+user: How do you ensure scalability in a software system?
+ai: Scalability can be achieved through: 1) Horizontal scaling (adding more machines), 2) Vertical scaling (adding more resources), 3) Load balancing, 4) Caching strategies, 5) Database sharding, 6) Asynchronous processing, 7) CDN usage, and 8) Stateless design.
+
+user: What's the role of API Gateway in microservices?
+ai: API Gateway serves as: 1) Single entry point for clients, 2) Request routing, 3) Protocol translation, 4) Authentication and authorization, 5) Rate limiting, 6) Request/response transformation, 7) Service discovery, and 8) Load balancing.
+
+user: How do you handle service discovery in microservices?
+ai: Service discovery can be implemented using: 1) Service registry (Eureka, Consul), 2) DNS-based discovery, 3) Client-side discovery, 4) Server-side discovery, 5) Health checks, 6) Load balancing, and 7) Service mesh solutions like Istio.
+
+user: What are the best practices for API design?
+ai: Best practices include: 1) RESTful principles, 2) Versioning strategy, 3) Proper error handling, 4) Authentication and authorization, 5) Rate limiting, 6) Documentation (OpenAPI/Swagger), 7) Caching strategies, and 8) Consistent naming conventions.
+
+user: How do you approach database architecture in large systems?
+ai: Database architecture considerations include: 1) Choosing between SQL and NoSQL, 2) Database sharding, 3) Replication strategies, 4) Caching layers, 5) Data partitioning, 6) Backup and recovery, 7) Data consistency, and 8) Performance optimization.
+
+user: What's the importance of monitoring in software architecture?
+ai: Monitoring is crucial for: 1) Performance tracking, 2) Error detection, 3) Resource utilization, 4) User experience, 5) Security threats, 6) Capacity planning, 7) SLA compliance, and 8) System health. Tools like Prometheus, Grafana, and ELK stack are commonly used. 
